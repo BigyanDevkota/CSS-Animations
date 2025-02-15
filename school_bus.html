@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bus</title>
+    <style>
+        .rec {
+            width: 300px;
+            height: 150px;
+            background-color: yellow;
+            opacity: 0.9;
+            border-radius: 12px;
+            position: absolute;
+            bottom: 25px;
+        }
+
+        /* Animation Of Bus */
+
+        .container {
+            animation: MyAnimation 6s ease-in-out 0s infinite normal;
+        }
+
+        @keyframes MyAnimation {
+            0% {
+                transform: translate(0, 685px);
+            }
+
+            100% {
+                transform: translate(1200px, 685px);
+            }
+        }
+
+        .rec2 {
+            width: 300px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 0px 0px 12px 12px;
+            position: relative;
+            bottom: 70.8px;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .name{
+            display: flex;
+            justify-content: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .windows {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            margin-right: 10px;
+        }
+
+        .windows div {
+            width: 30px;
+            height: 45px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(169, 169, 169);
+        }
+
+        .driver_window {
+            display: flex;
+            justify-content: end;
+        }
+
+        .driver_window div {
+            width: 50px;
+            height: 45px;
+            position: absolute;
+            bottom: 65px;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px 0px 2px 2px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: skyblue;
+        }
+
+        .tyres {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        #ty1,
+        #ty2 {
+            width: 50px;
+            height: 50px;
+            color: red;
+            background-color: black;
+            border-radius: 50px;
+        }
+
+        #ty1 {
+            margin-left: 30px;
+            margin-right: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rec anime">
+            <div class="name">
+                <span>XYZ School</span>
+            </div>
+
+            <div class="windows">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="driver_window">
+                <div></div>
+            </div>
+
+            <div class="bottom_rec">
+                <div></div>
+                <div></div>
+            </div>
+            
+            <!-- div for orange colour -->
+            <div class="rec2">
+            </div>
+        </div>
+
+        <div class="tyres">
+            <div id="ty1"></div>
+            <div id="ty2"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
