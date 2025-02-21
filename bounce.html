@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 90px;
+            background-color: red;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 10px;
+        }
+
+        @keyframes hello {
+
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            12.5% {
+                transform: translate(170px, -300px);
+            }
+
+            25% {
+                transform: translate(340px, 0px);
+            }
+
+            37.5% {
+                transform: translate(510px, -300px);
+            }
+
+            50% {
+                transform: translate(680px, 0px);
+            }
+
+            62.5% {
+                transform: translate(850px, -300px);
+            }
+
+            75% {
+                transform: translate(1020px, 0px);
+            }
+
+            87.5% {
+                transform: translate(1190px, -300px);
+            }
+
+            100% {
+                transform: translate(1360px, 0px);
+            }
+        }
+
+        .animation-effect:hover {
+            animation: hello 4s ease-out 1s 4 normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball animation-effect">
+        <span> Bounce </span>
+        <span> Me </span>
+    </div>
+</body>
+
+</html>
